@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B3C700F1-045D-402A-920A-31421E533E32}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ivy_League_Microfinance</RootNamespace>
+    <AssemblyName>Ivy_League_Microfinance</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application Form.Designer.cs">
+      <DependentUpon>Application form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmation Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmation Page.Designer.cs">
+      <DependentUpon>Confirmation Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact Page.Designer.cs">
+      <DependentUpon>Contact Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete From Loans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete From Loans.Designer.cs">
+      <DependentUpon>Delete From Loans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete from clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete from clients.Designer.cs">
+      <DependentUpon>Delete from clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerateReport.Designer.cs">
+      <DependentUpon>GenerateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maintain Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maintain Clients.Designer.cs">
+      <DependentUpon>Maintain Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration Page.Designer.cs">
+      <DependentUpon>Registration Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Clients.Designer.cs">
+      <DependentUpon>Update Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome Page.Designer.cs">
+      <DependentUpon>Welcome Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Status Page.Designer.cs">
+      <DependentUpon>Status Page.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Application form.resx">
+      <DependentUpon>Application form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmation Page.resx">
+      <DependentUpon>Confirmation Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact Page.resx">
+      <DependentUpon>Contact Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete From Loans.resx">
+      <DependentUpon>Delete From Loans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete from clients.resx">
+      <DependentUpon>Delete from clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerateReport.resx">
+      <DependentUpon>GenerateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maintain Clients.resx">
+      <DependentUpon>Maintain Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration Page.resx">
+      <DependentUpon>Registration Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Clients.resx">
+      <DependentUpon>Update Clients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome Page.resx">
+      <DependentUpon>Welcome Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Status Page.resx">
+      <DependentUpon>Status Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientRecordsmdf.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ClientRecordsmdf_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ClientRecordsmdf.mdf</DependentUpon>
+    </Content>
+    <Content Include="Ivy_League_Microfinance.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ivy_League_Microfinance_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Ivy_League_Microfinance.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\ghhh.png" />
+    <None Include="Resources\images %281%29.png" />
+    <None Include="Resources\1052315-200.png" />
+    <None Include="Resources\status.png" />
+    <None Include="Resources\images1.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\Contact.png" />
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
